@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Postcode WebService</title>
+</head>
+<body>
+<h1>Documentation</h1>
+
+<h2>Overview</h2>
+<p>This service acts as an interface to the Ordnance Survey Open Postcode Data, available <a href="https://www.ordnancesurvey.co.uk/opendatadownload/products.html">on the OS site</a>.  It currently provides easting and northing coordinates and vaguely accurate lat/long coords.  It will also provide the distance in miles and metres between two postcodes, and the distance between a postcode and each of a list of postcodes.</p>
+
+<h2>Prerequisites</h2>
+<ul>
+<li><a href="http://fatfreeframework.com/home">Fat Free</a></li>
+<li><a href="http://www.jstott.me.uk/phpcoord/">PHPcoord</a></li>
+<li><a href="https://www.ordnancesurvey.co.uk/opendatadownload/products.html">Code-Point® Open</a> postcode database</li>
+</ul>
+
+<h2>Usage Examples</h2>
+<dl>
+<dt>Eastings and Northings</dt>
+<dd><a href="/postcodes/UKEN/SO171BJ">/UKEN/SO171BJ</a></dd>
+<dt>All available data</dt>
+<dd><a href="/postcodes/full/SO171BJ">/full/SO171BJ</a></dd>
+<dt>Distance between two postcodes</dt>
+<dd><a href="/postcodes/distance/SO171BJ/GL510EX">/distance/SO171BJ/GL510EX</a></dd>
+<dt>Distance between a postcode and a list of postcodes</dt>
+<dd><a href="/postcodes/batchdistance/SO171BJ?postcodelist=GL510EX,SO160AS,NP108XG">/batchdistance/SO171BJ?postcodelist=GL510EX,SO160AS,NP108XG</a></dd>
+</dl>
+
+
+</body>
